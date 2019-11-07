@@ -1,3 +1,5 @@
+# https://www.youtube.com/watch?v=MC7w6f2B7iU
+# https://github.com/emkay-git/Camera-Doorbell-IOT
 # https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 
 from flask import Flask
