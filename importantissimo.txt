@@ -1,0 +1,72 @@
+Instalando o ambiente Virtual
+
+pip3 install virtualenv
+
+
+acessar a pasta da aplicação e digitar
+
+virtualenv -p python3 venv
+
+sendo
+
+venv = o nome do ambiente virtual que você escolher
+python3 = versão do python
+
+Dentro da pasta venv/Scripts ou venv/Bin tem um arquivo chamado activate
+que é um arquivo muito importante para a aplicação
+
+no comando acessar a pasta
+cd venv/Scripts
+
+e então digitar
+
+activate
+
+pronto você estará dentro do ambiente virtual
+
+
+>>> Instalar as bibliotecas dentro do venv/Scripts
+
+pip3 install flask
+
+
+>>> Para ver as bibliotecas e versões instaladas na sua aplicação
+
+pip3 freeze
+
+>>> Para salvar os requirements num txt
+
+pip3 freeze > requirements.txt
+
+>>> Para instalar futuramente em outro lugar todas as bibliotecas de aplicação em outro ambiente
+Esse  -r significa read
+
+pip3 install -r requirements.txt
+
+
+>>> Modelo MVC (Model, View, Controler) 3 camadas - Definir estrutura de organização da nossa aplicação
+
+
+>> Criar uma pasta chamada app que é a pasta principal da aplicação no dentro da pasta do projeto, nesse caso Flask
+
+Flask\app
+
+>> Dentro da pasta app criar as pastas controlers, models, static, templates
+
+app\controlers
+app\models
+app\static
+app\templates
+
+- A pasta static e a templates formam a view
+- O Flask tem como padrão buscar os arquivos com esses nomes de pastas
+
+>>> Passar o arquivo app.py para dentro da pasta app e renomeá-lo para __init__.py
+
+>>> Criar um arquivo com o nome __init__.py nas pastas controlers e models
+- Isso serve para separar os módulos
+
+>> Criar arquivo run.py dentro da pasta Flask
+>> mover o arquivo requirements.txt para a pasta Flask
+- O Python criar pastas __pycache__ com os arquivos em cache 
+
